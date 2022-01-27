@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+       
+
+      <style type="text/css">
+         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;500;600;700&display=swap');
+         body {
+            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #15234a;
+         }
+
+         .maintenace-wrapper {
+            background-image: url(/assets/images/moon-bg.svg), url(/assets/images/left-top-bg.svg), url(/assets/images/bottom-right-bg.svg);
+            background-position: right top, left top, right bottom;
+            background-repeat: no-repeat;
+            background-size: contain, 10%, 10%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 1rem;
+            width: 90%;
+         }
+
+         .maintenance-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+
+         .maintenance-content h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.8125rem;
+            line-height: 1.9375rem;
+         }
+
+         .maintenance-content p {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.9375rem;
+         }
+
+         .maintenance-content p a {
+            color: #EF6F71;
+            text-decoration: none;
+             font-weight: 600;
+         }
+
+         .maintenance-content h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.9375rem;
+         }
+
+         .logo {
+            width: 192px;
+             margin-bottom: 1rem;
+         }
+
+         .maintenance-content .text {
+            max-width: 525px;
+         }
+
+
+
+
+
+         @media (max-width:991px) {
+            .maintenance-content .text {
+               max-width: 350px;
+            }
+            .maintenance-content h1 {
+               font-size: 35px;
+            }
+            .maintenace-wrapper {
+               background-size: cover, 14%, 14%;
+            }
+         }
+
+         @media (max-width:640px) {
+             .maintenace-wrapper{
+                 height: auto;
+                 min-height: 100vh;
+             }
+            .maintenance-content {
+               flex-direction: column;
+                 padding-top: 1rem;
+            }
+            .maintenance-content .text {
+               max-width: 100%;
+               text-align: center;
+            }
+            .maintenance-content .graphic {
+               max-width: 300px;
+               margin: 1.5rem auto;
+            }
+            
+         }
+      </style>
+   </head>
+   <body>
+      <div class="maintenace-wrapper">
+         <div class="container">
+            <div class="maintenance-content">
+               <div class="text">
+                  <img class="logo" src="https://www.guardianlane.com/assets/images/guardianlane-logo.svg" alt="">  
+                  <h1>Healing takes time!</h1>
+                  <p>Sorry for the inconvenience. We’re currently updating the experience 
+                     for the children. We’ll be back online shortly.  
+                     Please reach out to <a href="mailto:info@guardianlane.com">info@guardianlane.com</a> if you need to reach us.
+                  </p>
+                  <h4>- The Guardian Lane Team </h4>
+               </div>
+               <div class="graphic">
+                  <img src="https://www.guardianlane.com/assets/images/maintenance-graphic.svg" width="100%" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
